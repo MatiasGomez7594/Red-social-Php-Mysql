@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.lista-resultados{
+    width:100%;
+    padding-top: 60px;
+    background-color: #ddd;
+    font-size: 18px;
+}
+
+.resultado{
+    margin: auto;
+    height:200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+
+.perfil-resultado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+
+
+}
+.perfil-resultado p{
+  
+    color:#000;
+}
+
+.perfil-resultado p:hover{
+    text-decoration: underline .1px #000;
+}
+
+.perfil-resultado img{
+    width:80px;
+    height:80px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.perfil-resultado p{
+    margin-left: 10px;
+
+}
+
+
+.resultado .procesar-solicitud-input{
+    cursor: pointer;
+    outline: none;
+    width:200px;
+    height:30px;
+    background-color: #06f;
+    border:1px solid #06f;
+    color:#fff;
+    font-size: 18px;
+    margin-right: 20px;
+    word-wrap: break-word;
+}
+.resultado .procesar-solicitud-input:hover{
+    background-color: #fff;
+    color:#06f;
+ 
+}
+
+.form-rechazar-aceptar{
+    display: block;
+    text-align: center;
+   
+
+}
+.form-rechazar-aceptar p{
+    color:#000;
+    text-align: center;
+    padding: 0 5px;
+}
+.form-rechazar-aceptar .inputs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-rechazar-aceptar .inputs .procesar-solicitud-input{
+    width:45%;
+
+
+}
+
+/*-----------------------------------------RESPONSIVE---------------------------------------------------*/
+@media (max-width:700px){
+    .resultado{
+        margin: auto;
+        height:100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .resultado .procesar-solicitud-input{
+
+        width:100px;
+        height:20px;
+
+        font-size: 10px;
+    }
+
+    .perfil-resultado p{
+        font-size: 14px;
+    }
+    .form-rechazar-aceptar p{
+        font-size: 12px;
+        color:#000;
+    }
+    .form-rechazar-aceptar .inputs input{
+        width:40%;
+    
+    }
+
+}

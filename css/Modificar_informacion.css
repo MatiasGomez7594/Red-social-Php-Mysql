@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contenedor{
+    width:100%;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.contenedor h1{
+    font-size: 30px;
+}
+
+.opciones{
+    display: block;
+    text-align:center;
+    width:700px;
+    margin: auto;
+    
+}
+form{
+    width:400px;
+    background-color: #06f;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+  
+}
+form input{
+    border-radius:5px; 
+    
+}
+#input-file div{
+    border-radius: 5px;
+   
+}
+
+.campo-usuario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    width:300px;
+    
+}
+
+.campo-usuario img{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+}
+.campo-usuario input[type="text"]{
+    width:300px;
+    height:40px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+
+}
+.campo-usuario input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:300px;
+    cursor: pointer;
+}
+.campo-usuario i{
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+    transition:all .3s ease-in;
+}
+.campo-usuario div{
+    padding-top:10px;
+    width:300px;
+    height:50px;
+    align-items: center;
+    background-color: #fff;
+  
+    
+}
+
+
+.usuario-password{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+.usuario-password input[type="text"]{
+    width:250px;
+    height:40px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px!important;
+
+}
+.usuario-password input[type="password"]{
+    width:250px;
+    height:40px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px!important;
+
+}
+.usuario-password input[type="checkbox"]{
+    outline: none;
+    cursor: pointer;
+}
+form input[type="submit"],input[type="button"]{
+    width:150px;
+    height:30px;
+    cursor: pointer;
+    outline:none;
+    border:1px solid #06f;
+    color:#06f;
+    background-color: #fff;
+    font-weight: bolder;
+    border-radius:5px; 
+    transition: all .3s ease-in;
+        
+
+    
+}
+form input[type="submit"]:hover,input[type="button"]:hover{
+    background-color: #06f;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/*-------------------------------RESPONSIVE------------------------------------------------*/
+
+@media (max-width:700px){
+    form{
+        width:300px!important;
+   
+    }
+    .campo-usuario{
+        width:140px;
+        
+    }
+    .campo-usuario img{
+        width:100px;
+        height:100px;
+
+    }
+    .campo-usuario div{
+        width:250px;
+        height: 40px;
+    
+    }
+    .campo-usuario i{
+        font-size: 18px;
+    }
+    .campo-usuario input[type="file"]{
+        width:250px;
+    }
+    .campo-usuario input[type="text"]{
+        width:250px;
+        
+    
+    }
+    .usuario-password input[type="text"]{
+        width:250px;
+
+
+    }
+    .usuario-password input[type="password"]{
+        width:250px;
+
+
+    }
+    .usuario-password label{
+        font-size: 12px;
+        margin-left: 170px;
+        position: absolute;
+    }
+    .usuario-password input[type="checkbox"]{
+        margin-left: 230px;
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+    }
+    form input[type="submit"]{
+        width: 80px;
+        height:20px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,139 @@
+.informacion{
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 30px;
+    width:70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;   
+    background-color: #06f;
+    border-radius: 5px;
+    color:#fff;
+ 
+}
+.informacion-opciones h1{
+    padding:10px;
+    cursor: pointer;
+}
+.informacion-opciones #h1-informacion-personal{
+    color:#000;
+
+}
+.contenedor-datos{
+    background-color: #03b;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.contenedor-informacion-contacto{
+    display:none;
+    margin-bottom: 30px;
+   
+}
+
+.contenedor-datos p{
+    font-size: 24px;
+    color:#000;
+}
+.datos-input{
+    padding-top: 5px;
+}
+.datos-input input{
+    outline:none;
+    border:none;
+    width:50%;
+    height:40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    
+    
+}
+.datos-input select {
+    outline:none;
+    border: none;
+    width: 16%;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+
+ 
+
+    
+}
+.datos-input input[type="radio"]{
+    width:20px;
+    cursor: pointer;
+}
+.contenedor-input-genero{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    
+}
+
+.datos-input input[type="submit"]{
+    width:25%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #06f;
+    font-size: 20px;
+    text-align: center;
+    transition: all .3s ease-in;
+}
+.datos-input input[type="submit"]:hover{
+    background-color: #06f;
+    color: #fff;
+}
+/*informacion de los usuarios*/
+.datos-usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:5px 0;
+  
+}
+.datos-usuario i{
+    font-size: 30px;
+    margin: 0 20px;
+    
+}
+/*------------------------------------RESPONSIVE---------------------------------------*/
+@media (max-width:700px){
+    .informacion-opciones h1{
+        font-size: 20px;
+    }
+    .contenedor-datos p{
+        font-size: 18px;
+    }
+    .datos-input input{
+        height: 30px;
+    }
+    .datos-input select {
+        font-size: 10px;
+    }
+    .contenedor-input-genero{
+        font-size: 18px;
+    }
+
+    .datos-input input[type="radio"]{
+        width:10px;
+
+    }
+    
+    .datos-input input[type="submit"]{
+        font-size: 15px;
+    }
+    .datos-usuario i{
+        font-size: 20px;
+    }
+    .datos-usuario p{
+        font-size: 12px;
+    }
+}
