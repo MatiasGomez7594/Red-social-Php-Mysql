@@ -10,19 +10,19 @@ if(!isset($_SESSION['usuario'])){
     die();
 }
 
-include('con_db.php');
+include('BBDD/con_db.php');
 
 $id_usuario = $_SESSION['usuario'];
 
-$buscar_usuario_sesion = "SELECT * FROM usuarios WHERE id_usuario='$id_usuario'";
+$buscar_usuario_sesion = "SELECT * FROM users WHERE id='$id_usuario'";
 
 $resultado = mysqli_query($conexion,$buscar_usuario_sesion);
 
 
 $row = $resultado->fetch_assoc();
-$nombre_usuario = $row['usuario'];
+$nombre_usuario = $row['name'];
 $email_usuario = $row['email'];
-$password_usuario = $row['contrasena'];
+$password_usuario = $row['password'];
 
 ?>
 

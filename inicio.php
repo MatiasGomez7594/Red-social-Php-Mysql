@@ -8,6 +8,7 @@
         include("todas_las_publicaciones_bbdd.php");
         ?>
     </div>
+
     <?php include("componentes/footer.php");?>
 
 

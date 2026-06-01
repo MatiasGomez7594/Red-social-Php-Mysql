@@ -16,7 +16,7 @@ include('con_db.php');
         $email = trim($email);
         $password = trim($password);
         $registrar_usuario = "INSERT INTO
-        usuarios (usuario, email, contrasena) 
+        users (name, email, password) 
         VALUES ('$usuario','$email','$password')";
         $resultado = mysqli_query($conexion,$registrar_usuario);
         if($resultado){

@@ -3,17 +3,20 @@ const regexp = {
 
 }    
 
+
 function buscar_usuario(email,password){
     var params = {"email":email,"password":password};
     $.ajax({
        data:params,
-       url:"iniciar_sesion.php",
+       url:"BBDD/iniciar_sesion.php",
        type: 'post',
        success: function (response) {   
+        console.log(response)
         if(response === false){
             $("#mensaje-login").show()
         }else{
-            window.location = "inicio.php"
+            console.log("entre")
+            //window.location = "inicio.php"
         }
           
        },
@@ -55,7 +58,10 @@ function validar_password(password_ingresada){
 }
 
 
-function validar_login(){
+let btnLogin = document.getElementById("btnLogin");
+
+btnLogin.addEventListener("click",()=>{
+
     if(!$("#email").val() || !$("#password").val()){
         $("#error-campos").show()    
 
@@ -70,4 +76,7 @@ function validar_login(){
       
    }
  
-}
+})
+
+
+

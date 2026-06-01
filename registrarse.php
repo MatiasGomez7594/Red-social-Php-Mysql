@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script defer src="scripts/validar_datos.js"></script>
+
     <title>Guardar datos</title>
 </head>
 <body>
@@ -20,10 +22,9 @@
         <input name="email" id="email" placeholder="Email"  type="email">
         <input name="password" id="password" placeholder="Password" autocomplete="off" type="password">
         <div id="error-password">La contraseña debe tener un minimo de 4 caracteres</div>
-        <input type="button" name="submit" value="Enviar" id="aceptar" onclick="validar_datos()">
+        <input type="button" name="submit" value="Enviar"  id="btnRegistrarse">
         <p>¿Ya tiene una cuenta? Inicie sesión <a href="index.php">aquí</a></p>
     </form>
     
-    <script src="scripts/validar_datos.js"></script>
 </body>
 </html>

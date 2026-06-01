@@ -2,8 +2,9 @@
 //para cuando inicio sesión permanezca en la página bienvenida.php
 //salvo que cierre la sesión en la ventana bienvenida.php
 session_start();
+
 if(isset($_SESSION['usuario'])){
-    header("location: bienvenida.php");
+    header("location: inicio.php");
 }
 
 ?>
@@ -14,6 +15,7 @@ if(isset($_SESSION['usuario'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="scripts/validar_login.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Iniciar sesión</title>
@@ -33,12 +35,11 @@ if(isset($_SESSION['usuario'])){
     <p id="error-password">
        La contraseña debe tener un minimo 4 caracteres
     </p>
-    <input type="button" onclick="validar_login()" value="Ingresar">
-    <p>
+    <input id="btnLogin" type="button" value="Ingresar">
+    <p> 
     ¿No tienes cuenta? Registrate <a href="registrarse.php">aqui</a>
     </p>
 
     </form>
-    <script src="scripts/validar_login.js"></script>
 </body>
 </html>

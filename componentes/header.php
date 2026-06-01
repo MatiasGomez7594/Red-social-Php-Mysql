@@ -32,6 +32,8 @@
         </div>
         <div class="header-right">
             <a href="ver_cuenta.php"><?php echo $nombre_usuario;?></a>
+                        <a href="cerrar_sesion.php">Cerrar sesión</a>
+
         </div>
              
             

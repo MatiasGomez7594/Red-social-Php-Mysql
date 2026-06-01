@@ -6,7 +6,7 @@ function registrar_usuario(usuario,password,email){
     var params = {"email":email,"usuario":usuario,"password":password};
     $.ajax({
        data:params,
-       url:"registrar.php",
+       url:"BBDD/registrar.php",
        type: 'post',
        success: function (response) {   
         if(response != "Registro exitoso!"){
@@ -79,8 +79,11 @@ function validar_password(password_ingresada){
 }
 
 
+let btnRegistrarse = document.getElementById("btnRegistrarse");
 
-function validar_datos(){
+
+
+btnRegistrarse.addEventListener("click",()=>{
     var usuario_ingresado = document.getElementById("usuario").value;
     var email_ingresado = document.getElementById("email").value;
     var password_ingresada = document.getElementById("password").value;
@@ -92,4 +95,6 @@ function validar_datos(){
     if(usuario_valido == true && email_valido == true && password_valida == true){
         registrar_usuario(usuario_ingresado,password_ingresada,email_ingresado)
     }
-}
+
+
+})
